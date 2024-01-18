@@ -8,14 +8,16 @@
 }
 
 body {
+  width: 100%;
   font-family: "Poppins", sans-serif;
-
   padding: 20px;
   background-image: url(/assets/img/sfondo.png);
   background-position: center;
 }
 /* HEADER */
 header {
+  width: 100%;
+
   background: rgb(0, 160, 198);
   background: linear-gradient(180deg, rgba(0, 160, 198, 1) 0%, rgba(3, 109, 134, 1) 68%);
   box-shadow: 5px 5px 5px 5px #444;
@@ -46,22 +48,66 @@ nav li {
 }
 /* MAIN */
 main {
+  width: 100%;
   padding: 20px;
   background-color: #ebffff; /* Colore di sfondo per il body */
   box-shadow: 5px 5px 5px 5px #444;
-
   display: inline-block;
 }
+
 /* ELEMENTI NEL MAIN - ARTICLE */
 
+iframe {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  max-width: 100%;
+}
 /* TABELLE */
+table {
+  width: 100%;
+  text-align: center;
+}
 
+thead tr {
+  color: white;
+  background-color: #3f6bca;
+  border: 1px solid #ddd;
+}
+
+tbody tr {
+  color: white;
+  background-color: white;
+  border: 1px solid #ddd;
+}
+tbody th {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+  white-space: nowrap; /* Impedisce il wrapping del testo */
+  word-wrap: break-word; /* Spezza le parole lunghe se necessario */
+  overflow: hidden; /* Nasconde il testo in eccesso */
+}
+
+/* Aggiungi uno spazio tra le celle */
+td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+  white-space: nowrap; /* Impedisce il wrapping del testo */
+  word-wrap: break-word; /* Spezza le parole lunghe se necessario */
+  line-height: 1.6;
+  overflow: hidden; /* Nasconde il testo in eccesso */
+}
 /* FORM */
 
 /* ELEMENTI NELL' ASIDE */
 
 /* FOOTER */
 footer {
+  width: 100%;
+
   background: rgb(0, 160, 198);
   background: linear-gradient(180deg, rgba(0, 160, 198, 1) 0%, rgba(3, 109, 134, 1) 68%);
   box-shadow: 5px 5px 5px 5px #444;
